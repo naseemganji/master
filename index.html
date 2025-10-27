@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    
+    <!-- Head -->
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Muhamad Naseem Ganji — Portfolio</title>
+    <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+</head>
+
+    <!-- Body -->
+    <body class="Background">   
+        <!-- Wrap all main content -->
+        <div class="main-content">
+            <!-- Navbar -->
+            <div class="Navbar">
+                <a class="active" href="#Home">Home</a>
+                <a href="#Slideshow">Slideshow</a>
+                <a href="#About">About</a>
+                <a href="#GitHub">GitHub</a>
+                <!-- Contact link that opens the form -->
+                <a onclick="openForm()" class="contact">Contact</a>
+            </div>
+
+            <!-- Background video -->
+            <div id="Home">
+                <video autoplay muted loop id="Typing_Video">
+                    <source src="images/video/Typing.mp4" type="video/mp4">
+                    <!-- Display message if video fails to run -->
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+            <!-- Video text -->
+            <div class="Video_Text">
+                <h1 class="white-text">Muhamad Naseem Ganji's Portfolio</h1>
+                <strong>
+                    <p class="center">
+                        <q>The best code is like a well-structured financial model—
+                            <br>clean, logical, and built to scale. Every function serves a purpose,
+                            <br>every variable tells a story, and every solution is tested until it works.
+                        </q>
+                        <br> -My Development Philosophy<br>
+                        <br>
+                        I'm Muhamad Naseem Ganji—a strategic problem-solver with 20+ years in finance and analytics, now channeling that expertise into web and software development. Welcome to my portfolio where analytical rigor meets creative execution.
+                        <br>
+                        <br>Let's build something exceptional together! 
+                    </p>
+                </strong>
+            </div>
+
+            <!-- Slideshow section added -->
+            <div id="Slideshow">
+                <div id="Slideshow_Background"> 
+                    <div id="Slideshow_Container">
+                        <!-- Slide 1 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/mganji.JPG" alt="Muhamad Naseem Ganji Professional Photo">
+                            <div class="text">Strategic problem-solver ready to tackle your next project!</div>
+                        </div>
+                        <!-- Slide 2 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                            <div class="text">Full-stack developer with expertise in:<br>HTML, CSS, JavaScript, Bootstrap</div>
+                        </div>
+                        <!-- Slide 3 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                            <div class="text">Leveraging analytical skills with<br>modern programming languages</div>
+                        </div>
+                        <!-- Slide 4 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                            <div class="text">Building robust applications with<br>precision and purpose</div>
+                        </div>
+                        <!-- Slide 5 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                            <div class="text">20+ years of finance & analytics experience<br>meets modern development practices</div>
+                        </div>
+                        <!-- Slide 6 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/MyPhoto.jpg" alt="Muhamad Naseem Ganji Custom Photo"> 
+                            <div class="text"><a class="white-text contact" onclick="openForm()">Ready to collaborate? Contact me!</a></div> 
+                        </div>
+                        <!-- Previous and next buttons -->
+                        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                    <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                        <span class="dot" onclick="currentSlide(6)"></span> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- About section -->
+            <div class="Row" id="About">
+                <!-- Left column -->
+                <div class="Column_2">
+                    <img src="images/MyPhoto.jpg" alt="Muhamad Naseem Ganji Professional Photo">
+                </div>
+                <!-- Right column -->
+                <div class="Column_1">
+                    <h1>About</h1>
+                    <p>
+                        I'm a strategic problem-solver with 20+ years of experience in finance, analytics, and ERP systems—now channeling that expertise into web and software development. 
+                        <br>
+                        <br>With hands-on proficiency in HTML, CSS, JavaScript, Bootstrap, and Visual Studio Code, I build clean, responsive interfaces and debug code with precision. I'm a graduate of <a href="https://www.lighthouselabs.ca/" target="_blank">Lighthouse Labs</a> Web Development Bootcamp, where I honed my skills in DOM manipulation, constructor functions, and UI design.
+                        <br>
+                        <br>My learning style is iterative and feedback-driven—I thrive on refining solutions until they work perfectly. Whether integrating financial logic into dashboards or optimizing user flows for clarity and performance, I bring analytical rigor and creative execution to every project.
+                        <br>
+                        <br>I build with purpose, and I'm always learning. <a onclick="openForm()" class="contact">Let's collaborate</a> on your next challenge!
+                    </p>
+                </div>
+            </div>
+
+            <!-- GitHub section -->
+            <div class="Row" id="GitHub">
+    <!-- Left column -->
+    <div class="Column_1">
+        <h1>GitHub & Featured Projects</h1>
+        <p>
+            Explore my coding journey and development projects on GitHub. My repositories showcase the intersection of analytical thinking and modern development practices, featuring real-world applications and clean, maintainable code.
+        </p>
+        <br>
+        <p class="center">
+            <a href="https://github.com/naseemganji" target="_blank" class="github-main-link">
+                📂 View My Complete GitHub Portfolio
+            </a>
+        </p>
+        
+        <!-- Featured Projects Section -->
+        <div class="featured-projects">
+            <h2>Featured Development Projects</h2>
+            
+            <!-- Project 1: Pizza Menu -->
+            <div class="project-card">
+                <div class="project-header">
+                   <h3><span class="project-icon">🍕</span>
+                    Pizza Menu</h3>
+                </div>
+                <p class="project-description">
+                    A dynamic menu for ordering pizza with a variety of toppings. Users can select their preferences, and the app calculates the total price based on the input.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">DOM Manipulation</span>
+                </div>
+                <div class="project-links">
+                    <a href="project-PizzaMenu/index.html" target="_blank" class="project-btn demo">🚀 Live Demo</a>
+                    <a href="https://github.com/naseemganji/master/tree/main/Pizza_Project" target="_blank" class="project-btn code">📝 View Code</a>
+                </div>
+            </div>
+
+            <!-- Project 2: Tic-Tac-Toe Game -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3><span class="project-icon">❌</span>
+                    Tic-Tac-Toe Game</h3>
+                </div>
+                <p class="project-description">
+                    The classic game of tic-tac-toe with a twist! The game randomly rolls dice to determine which player goes first. Players can choose their tokens, and the winner is celebrated with music and flashing lights.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5 Canvas</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Game Logic</span>
+                    <span class="tech-tag">Audio API</span>
+                </div>
+                <div class="project-links">
+                    <a href="project-TicTacToe/index.html" target="_blank" class="project-btn demo">🚀 Live Demo</a>
+                    <a href="https://github.com/naseemganji/master/tree/main/project-TicTacToe" target="_blank" class="project-btn code">📝 View Code</a>
+                </div>
+            </div>
+
+            <!-- Project 3: Calculator -->
+            <div class="project-card">
+                <div class="project-header">
+                   <h3></h3> <span class="project-icon">🧮</span>
+                    Calculator</h3>
+                </div>
+                <p class="project-description">
+                    A sleek web-based calculator supporting basic arithmetic operations: addition, subtraction, multiplication, and division.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Event Handling</span>
+                </div>
+                <div class="project-links">
+                    <a href="project-Calculator/index.html" target="_blank" class="project-btn demo">🚀 Live Demo</a>
+                    <a href="https://github.com/naseemganji/master/tree/main/Calculator-project" target="_blank" class="project-btn code">📝 View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Right column -->
+    <div class="Column_2">
+        <a href="https://github.com/naseemganji" target="_blank">
+            <img src="images/GitHub.png" alt="GitHub Profile Link">
+        </a>
+        <br><br>
+        
+        <!-- Technical Skills Highlight -->
+        <div class="skills-highlight">
+            <h3>Technical Skills Demonstrated</h3>
+            <div class="skill-item">
+                <strong>🌐 Responsive Web Interfaces</strong>
+                <p>Mobile-first design, cross-browser compatibility, interactive components</p>
+            </div>
+            <div class="skill-item">
+                <strong>⚡ DOM Manipulation & JavaScript</strong>
+                <p>Event handling, dynamic content, constructor functions, game logic</p>
+            </div>
+            <div class="skill-item">
+                <strong>🔧 Clean, Debugged Code</strong>
+                <p>Version control, performance optimization, systematic debugging</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Contact form - Fixed structure -->
+            <div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+    <div class="form-popup" id="myForm">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="form-container">
+            <!-- Web3Forms required field -->
+            <input type="hidden" name="access_key" value="91a2c8d2-bc5e-42e0-ad0c-711f42667687">
+            
+            <h1>Let's Collaborate</h1>
+            <p style="margin-bottom: 15px; font-size: 14px; color: #666;">
+                Ready to bring analytical precision to your development project? Let's discuss how my unique blend of finance expertise and coding skills can help achieve your goals.
+            </p>
+            
+            <label for="name"><b>Name *</b></label>
+            <input type="text" name="name" id="name" placeholder="Your full name" required>
+            
+            <label for="email"><b>Email *</b></label>
+            <input type="email" name="email" id="email" placeholder="Your email address" required>
+            
+            <label for="phone"><b>Phone</b></label>
+            <input type="text" name="phone" id="phone" placeholder="Your phone number">
+            
+            <label for="message"><b>Project Details *</b></label>
+            <textarea name="message" id="message" placeholder="Tell me about your project, timeline, and how I can help..." rows="4" required></textarea>
+
+            <button type="submit" class="btn" id="submit-btn">SEND MESSAGE</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            
+            <!-- Simple result display -->
+            <span id="result" style="display: block; margin-top: 10px; font-weight: bold;"></span>
+        </form>
+    </div>
+</div>
+        </div>
+        
+        <!-- Footer section -->
+        <footer>
+            <p class="center">&copy; 2024 Muhamad Naseem Ganji - Strategic Developer</p>
+            <p class="center">Connect with me: <a href="https://www.linkedin.com/in/naseemganji/" target="_blank">LinkedIn</a> • <a href="https://github.com/naseemganji" target="_blank">GitHub</a></p>
+        </footer>
+
+        <!-- Only load the JavaScript file that exists -->
+        <script src="JS/portfolio.js"></script>
+    </body>
+</html>
+
